@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'sleep 60'
+        sh 'docker ps'
       }
     }
   }
