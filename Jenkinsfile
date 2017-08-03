@@ -1,9 +1,14 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'docker-slave-jenkins'
+    }
+    
+  }
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
-        sh 'ls -ltr'
+        sh 'sleep 60'
       }
     }
   }
